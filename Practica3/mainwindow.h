@@ -2,7 +2,9 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-
+#include <string>
+#include <fstream>
+using namespace std;
 namespace Ui {
 class MainWindow;
 }
@@ -14,7 +16,12 @@ class MainWindow : public QMainWindow
 public:
     explicit MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
-
+private slots:
+    void btnFibonacci();
+    void btnImagenes();
+    void btnTiempos();
+    QString openFile();
+    void fibonacci(ofstream &archivo);
 private:
     Ui::MainWindow *ui;
 };
