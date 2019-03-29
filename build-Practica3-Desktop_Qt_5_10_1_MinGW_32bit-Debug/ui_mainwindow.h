@@ -32,7 +32,7 @@ public:
     QPushButton *btnImagenes;
     QPushButton *btnTiempo;
     QLabel *label;
-    QLabel *label_2;
+    QLabel *textoAlgoritmo;
     QMenuBar *menuBar;
     QToolBar *mainToolBar;
     QStatusBar *statusBar;
@@ -56,9 +56,9 @@ public:
         label = new QLabel(centralWidget);
         label->setObjectName(QStringLiteral("label"));
         label->setGeometry(QRect(180, 20, 81, 31));
-        label_2 = new QLabel(centralWidget);
-        label_2->setObjectName(QStringLiteral("label_2"));
-        label_2->setGeometry(QRect(280, 20, 101, 31));
+        textoAlgoritmo = new QLabel(centralWidget);
+        textoAlgoritmo->setObjectName(QStringLiteral("textoAlgoritmo"));
+        textoAlgoritmo->setGeometry(QRect(280, 20, 101, 31));
         MainWindow->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(MainWindow);
         menuBar->setObjectName(QStringLiteral("menuBar"));
@@ -83,7 +83,7 @@ public:
         btnImagenes->setText(QApplication::translate("MainWindow", "Imagenes", nullptr));
         btnTiempo->setText(QApplication::translate("MainWindow", "Tiempos", nullptr));
         label->setText(QApplication::translate("MainWindow", "Algoritmo actual: ", nullptr));
-        label_2->setText(QApplication::translate("MainWindow", "Ninguno", nullptr));
+        textoAlgoritmo->setText(QApplication::translate("MainWindow", "Ninguno", nullptr));
     } // retranslateUi
 
 };

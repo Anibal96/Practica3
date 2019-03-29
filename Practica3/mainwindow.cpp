@@ -33,10 +33,10 @@ void MainWindow::btnFibonacci(){
 }
 
     void MainWindow::fibonacci(ofstream &archivo){
-        int numero1 = 0;
-        int numero2 = 1;
-        for(int j = 0; j < 50; j++){
-            int aux = numero2;
+        unsigned long long int numero1 = 0;
+        unsigned long long int numero2 = 1;
+        for(int j = 0; j < 75; j++){
+            unsigned long long int aux = numero2;
             numero2 = numero1+numero2;
             numero1 = aux;
             //Guardar en un documento de text numero2
